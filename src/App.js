@@ -103,7 +103,20 @@ function App() {
 <div className='d-flex flex-column min-vh-100'>
 <Header  title= "Todo List" searchBar = {true}/> {/* the attributes inside the header are props */}
 <Routes>
-  <Route path="/" element = {
+
+
+  <Route path="/Todos-List" element = {
+    <>
+    <AddTodosform addTodos={addTodos}/>
+<Todos todos={todos} OnDelete={OnDelete}/>
+{/* ALWAYS PASS THE PROP HERE FIRST (here todos is the prop)  */}
+</>
+  }
+    
+  >
+  
+          </Route>
+          <Route path="/" element = {
     <>
     <AddTodosform addTodos={addTodos}/>
 <Todos todos={todos} OnDelete={OnDelete}/>
