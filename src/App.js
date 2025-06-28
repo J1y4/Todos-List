@@ -6,8 +6,8 @@ import Todos from './Mycomponents/Todos';
 import AddTodosform from './Mycomponents/AddTodosform';
 import { useEffect, useState } from 'react';
 import About from './Mycomponents/About';
+import { BrowserRouter } from "react-router-dom";
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   
@@ -99,7 +99,7 @@ function App() {
 
   return (            
 <>
-<Router>
+<BrowserRouter>
 <div className='d-flex flex-column min-vh-100'>
 <Header  title= "Todo List" searchBar = {true}/> {/* the attributes inside the header are props */}
 <Routes>
@@ -144,7 +144,7 @@ function App() {
 
 <Footer/>
 </div>
-</Router>
+</BrowserRouter>
 </>
   );
 }

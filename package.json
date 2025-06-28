@@ -1,5 +1,4 @@
-{ "homepage": "https://j1y4.github.io/Todos-List",
-  "name": "todos-list",
+{ "name": "todos-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
